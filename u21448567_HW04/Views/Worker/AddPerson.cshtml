@@ -1,0 +1,166 @@
+﻿
+@{
+    ViewBag.Title = "AddPerson";
+}
+
+<div class="jumbotron jumbotron-fluid" style="background-color: #FFE69A">
+    <div class="container">
+        <h1 class="display-4">Sign Up as Worker</h1>
+        <p class="lead">Creating the opportunity for employment. </p>
+    </div>
+</div>
+@*<div class="container">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputFName">First Name</label>
+                <input type="text" class="form-control" id="inputFName" placeholder="John">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputLName">Last Name</label>
+                <input type="text" class="form-control" id="inputLName" placeholder="Doe">
+            </div>
+        </div>
+
+
+        <div class="form-row">
+            <div class="form-group col-md-10">
+                <label for="inputPhone">Phone Number</label>
+                <input type="number" class="form-control" id="inputPhone" placeholder="xxx-xxx-xxxx">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputAge">Age</label>
+                <input type="number" class="form-control" id="inputAge">
+            </div>
+        </div>
+        
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Worker</button>
+    </form>
+</div>*@
+
+@*<form>
+    <div class="row">
+        <div class="col">
+            <label for="inputFName">First Name</label>
+            <input type="text" class="form-control" id="inputFName" placeholder="John">
+        </div>
+        <div class="col">
+            <label for="inputLName">Last Name</label>
+            <input type="text" class="form-control" id="inputLName" placeholder="Doe">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <label for="inputPhone">Phone Number</label>
+            <input type="number" class="form-control" id="inputPhone" placeholder="xxx-xxx-xxxx">
+        </div>
+        <div class="col-md-2">
+            <label for="inputAge">Age</label>
+            <input type="number" class="form-control" id="inputAge">
+        </div>
+    </div>
+    <div class="row"> 
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress">
+    </div>
+</form>*@
+
+@*<form>
+    <div class="row">
+        <div class="col-6">
+            <label for="inputFName">First Name</label>
+            <input type="text" class="form-control" id="inputFName" placeholder="John">
+        </div>
+        <div class="col-6">
+            <label for="inputLName">Last Name</label>
+            <input type="text" class="form-control" id="inputLName" placeholder="Doe">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-10">
+            <label for="inputPhone">Phone Number</label>
+            <input type="number" class="form-control" id="inputPhone" placeholder="xxx-xxx-xxxx">
+        </div>
+        <div class="col-2">
+            <label for="inputAge">Age</label>
+            <input type="number" class="form-control" id="inputAge">
+        </div>
+    </div>
+
+    <div class="row">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+</form>*@
+
+<div class="container" style="margin: auto; width: 50%; padding: 10px; border-style: solid; border-width: 5px;">
+    @using (Html.BeginForm("AddPerson", "Worker", FormMethod.Post, new { enctype = "multipart/form-data" })) //form to add workers
+    {
+        <div class="form-group">
+            <label for="inputFName">First Name</label>
+            <input type="text" class="form-control" id="inputFName" placeholder="John">
+        </div>
+        <div class="form-group">
+            <label for="inputLName">Last Name</label>
+            <input type="text" class="form-control" id="inputLName" placeholder="Doe">
+        </div>
+        <div class="form-group">
+            <label for="inputPhone">Phone Number</label>
+            <input type="text" class="form-control" id="inputPhone" placeholder="xxx-xxx-xxxx">
+        </div>
+        <div class="form-group">
+            <label for="inputAge">Age</label>
+            <input type="number" class="form-control" id="inputAge" placeholder="18">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Tell us about yourself</label>
+            <textarea class="form-control" id="inputBio" rows="3"></textarea>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="profession" id="professionType1" value="1">
+            <label class="form-check-label" for="inlineRadio1">Painter</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="profession" id="professionType2" value="2">
+            <label class="form-check-label" for="inlineRadio2">Tiler</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="profession" id="professionType3" value="3">
+            <label class="form-check-label" for="inlineRadio3">Mover</label>
+        </div>
+        <br />
+        <br />
+        <div><input class="btn btn-primary" type="submit" value="Upload a Profile Photo" /></div>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br />
+
+    }
+</div>
+

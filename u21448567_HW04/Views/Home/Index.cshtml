@@ -1,0 +1,429 @@
+﻿
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron jumbotron-fluid" style="background-color: #FFE69A">
+    <div class="container">
+        <h1 class="display-4">Homework Assignment 4 - INF 272</h1>
+        <p class="lead">Developed by Connor Cress - u21448567</p>
+    </div>
+</div>
+
+<div class="row"> <!--bootstrap grid, card and modal-->
+    <div class="col-md-3">
+        <div class="card border-primary mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Sign Up as Worker</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Use Case Narrative 1</h6>
+                <p class="card-text">A person can open the application and begin the worker sign up process by filling out the form with their details.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNar1">View Narrative</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-success mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Sign Up as Employer</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Use Case Narrative 2</h6>
+                <p class="card-text">A peron can open the application and begin the employer sign up process by filling out the form with their details.</p>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalNar2">View Narrative</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-danger mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Payment</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Use Case Narrative 3</h6>
+                <p class="card-text">When a Job is completed, the Employer gets rates and reviews the worker. Money then gets transfered to the Workers account.</p>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalNar3">View Narrative</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-info mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Job Search</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Use Case Narrative 4</h6>
+                <p class="card-text">An employer can begin the Job Search by choosing the job he wants done. He can then choose from the available workers.</p>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalNar4">View Narrative</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+<br />
+<div class="row">
+    <div class="col">
+        <div class="card border-dark mb-3 text-center">
+            <div class="card-body">
+                <h5 class="card-title">Class Diagram</h5>
+                <p class="card-text">Complete Class Diagram of Assignment.</p>
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalClassDiag">View Class Diagram</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--MODAL--MODAL--MODAL--MODAL--MODAL--MODAL--MODAL--MODAL--MODAL--MODAL--MODAL--MODAL--MODAL--MODAL---->
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalNar1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Use Case Narrative 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th colspan="3" style="text-align:center">TUNITI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Author: Connor Cress</th>
+                                <th scope="row">Date: August 2022</th>
+                                <td>Version 1.0.0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Use case name:</th>
+                                <td>Sign Up as Worker</td>
+                                <th scope="row">USE CASE TYPE</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Use case id:</th>
+                                <td>1.1</td>
+                                <td>Business Requirements: No</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Priority:</th>
+                                <td>High</td>
+                                <td>System Analysis: Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Source:</th>
+                                <td>Client Interview</td>
+                                <td>System Design: No</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Primary business actor:</th>
+                                <td colspan="2">Worker</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Primary system actor:</th>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Other participating actors:</th>
+                                <td colspan="2">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Other interested stakeholders:</th>
+                                <td colspan="2">
+                                    <ul>
+                                        <li>Potential future employees</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description:</th>
+                                <td colspan="2">Someone looking to find employment can download the app and sign themselves up as a worker. Through the sign up process, they can list their credits and accolations as to prove that they are skilled in their chosen field.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pre-condition:</th>
+                                <td colspan="2">Potential worker needs to have access to phone and be able to download applications.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Trigger:</th>
+                                <td colspan="2">Fills in "Add Worker" form, and presses submit button.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalNar2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Use Case Narrative 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th colspan="3" style="text-align:center">TUNITI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Author: Connor Cress</th>
+                                <th scope="row">Date: August 2022</th>
+                                <td>Version 1.0.0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Use case name:</th>
+                                <td>Sign Up as Employer</td>
+                                <th scope="row">USE CASE TYPE</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Use case id:</th>
+                                <td>2.1</td>
+                                <td>Business Requirements: No</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Priority:</th>
+                                <td>Yes</td>
+                                <td>System Analysis: Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Source:</th>
+                                <td>Client Interview</td>
+                                <td>System Design: No</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Primary business actor:</th>
+                                <td colspan="2">Employer</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Primary system actor:</th>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Other participating actors:</th>
+                                <td colspan="2">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Other interested stakeholders:</th>
+                                <td colspan="2">
+                                    <ul>
+                                        <li>Potential future Workers</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description:</th>
+                                <td colspan="2">An employer, looking to find a worker to help with a job would fitst need to download the app, create an account and then begin the hiring process in which they will be able to specify the type of job they want.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pre-condition:</th>
+                                <td colspan="2">Employer needs to have access to a phone and be able to download applications</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Trigger:</th>
+                                <td colspan="2">Filling out sign up form and then submitting it, to become an employer.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalNar3">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Use Case Narrative 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th colspan="3" style="text-align:center">TUNITI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Author: Connor Cress</th>
+                                <th scope="row">Date: August 2022</th>
+                                <td>Version 1.0.0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Use case name:</th>
+                                <td>Payment</td>
+                                <th scope="row">USE CASE TYPE</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Use case id:</th>
+                                <td>3.1</td>
+                                <td>Business Requirements: No</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Priority:</th>
+                                <td>High</td>
+                                <td>System Analysis: Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Source:</th>
+                                <td>Client Interview</td>
+                                <td>System Design: No</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Primary business actor:</th>
+                                <td colspan="2">Employer</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Primary system actor:</th>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Other participating actors:</th>
+                                <td colspan="2">
+                                    <ul>  
+                                        <li>Worker (PBA)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Other interested stakeholders:</th>
+                                <td colspan="2">
+                                    <ul>
+                                        <li>Bank (ESA)</li>
+                                        <li>Worker (ERA)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description:</th>
+                                <td colspan="2">When the job has been completed, the Employer will need to press the 'End Job' button. This will call up the rating and review screen, where the employer can rate and review the workers performance. This step is mandatory as it helps the worker. The money then gets deducted from the employers bank account or tuniti-credit acccount, and deposited into the workers account. This process can take up to a few days if done through the bank.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pre-condition:</th>
+                                <td colspan="2">Job needs to have started.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Trigger:</th>
+                                <td colspan="2">Employer presses 'End Job' button.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalNar4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Use Case Narrative 4</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th colspan="3" style="text-align:center">TUNITI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Author: Connor Cress</th>
+                                <th scope="row">Date: August 2022</th>
+                                <td>Version 1.0.0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Use case name:</th>
+                                <td>Job Search</td>
+                                <th scope="row">USE CASE TYPE</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Use case id:</th>
+                                <td>4.1</td>
+                                <td>Business Requirements: No</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Priority:</th>
+                                <td>High</td>
+                                <td>System Analysis: Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Source:</th>
+                                <td>Client Interview</td>
+                                <td>System Design: No</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Primary business actor:</th>
+                                <td colspan="2">Employer</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Primary system actor:</th>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Other participating actors:</th>
+                                <td colspan="2">
+                                    <ul>
+                                        <li>Worker (PBA)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Other interested stakeholders:</th>
+                                <td colspan="2">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description:</th>
+                                <td colspan="2">The employer requires a job be done. He begins the Job Search process of a worker to do it for them. They specify the type of job that they are looking for and get presented with all the nearest and available workers who have experience in that field. The employer is able to pick and choose who he wants to hire, based off the criteria of the workers profile. The employer decides on a worker and selects them to begin the hiring process. The process is now pending and the worker will need to accept the job. Once accepted, the job will be finalised and the worker and the employer can communicate and arrange potential plans.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pre-condition:</th>
+                                <td colspan="2">There needs to be an available worker. There needs to be an available employer looking for a worker. </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Trigger:</th>
+                                <td colspan="2">The employer presses the 'Job Search' button. </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalClassDiag">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Class Diagram</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="~/Images/272 - HW04 - CD.png" class="img-fluid" alt="Class Diagram">
+                </div>
+            </div>
+        </div>
+    </div>
+    
